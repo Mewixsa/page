@@ -14,7 +14,7 @@ nav{
     padding-bottom:1%;
 }
 
-.photoset{
+button{
     height: 60px;
     color: white;
     width:100px;
@@ -24,12 +24,25 @@ nav{
     border-left: 0px;
     border-right: 0px;
     border-radius: 20px;
-    transition-duration: .5s;
+    transition-duration: .8s;
 }
 
 .photoset:hover{
     width:300px;
-    
+    cursor: pointer;
+}
+
+@media (hover:hover){
+    button:hover{
+        width:300px;
+        cursor: pointer;
+    }
+}
+@media (hover:none){
+    button:active{
+        width:300px;
+        cursor: pointer;
+    }
 }
 
 body {
