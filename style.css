@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 nav{
@@ -9,8 +11,8 @@ nav{
     text-align: center; 
     border-bottom: 2px solid rgb(255, 255, 255);
     border-radius: 20px; 
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-left: 0px solid black;
+    border-right: 0px solid black;
     padding-bottom:1%;
 }
 
@@ -69,12 +71,13 @@ h1 {
 h2 {
     width: 100%;
     height: fit-content;
+    font-size:xx-large;
 }
 
 .desc {
-    padding-left: 50px;
     gap: 0;
     width: 79%;
+    margin-left: 50px;
 }
 
 .classmate {
@@ -89,6 +92,15 @@ h2 {
     transition: opacity 1.5s ease, transform 1.5s ease;
     border-radius: 20px;
     display: flex;
+}
+
+.right{
+    text-align: right;
+    margin-left: 50px;
+}
+
+.right_t{
+    text-align: right !important;
 }
 
 .classmate.visible {
@@ -106,7 +118,7 @@ footer {
 }
 
 .photo {
-    width: 15%;
+    width: 20%;
     border-radius: 15px;
     border: 2px solid white;
 }
@@ -140,5 +152,12 @@ footer {
     }
     h1{
         font-size: 20px;
+    }
+    .right_t{
+        text-align: center !important; 
+        margin-left: 0;
+    }
+    .right{
+        margin-left: 0;
     }
 }
